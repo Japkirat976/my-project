@@ -1,0 +1,49 @@
+
+body {
+  height: 100vh; /* 100% of the viewport height*/
+  background-color: #f1f1f1;
+  display: flex; /*arrange items*/
+  justify-content: center; /*arrange content as center*/
+  align-items: center;
+  font-family: Arial, sans-serif; /* fonts to be used */
+}
+
+.card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(0, 0, 0,0.15); /* bax background shadow, last value (0.15) is the opacity*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /*to add space between items*/
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px; /*to curve the edges of the box*/
+  padding: 12px;
+  cursor: pointer;
+}
+
+.item1 {
+  font-size: 28px;
+  color: green;
+  background-color: transparent;
+  padding: 10px;
+  cursor: default;
+}
+
+.item2 {
+  background-color: #33bd38;
+  color: white;
+}
+
+.item3 {
+  background-color: #fa1100;
+  color: white;
+}
