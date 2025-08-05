@@ -1,0 +1,9 @@
+first in html file decribed the doctype for HTML 5
+then the language and basic things like character set used, title, content size according to the device
+then in body tag divided the page into different items - 
+first one is the card the back ground for the deposit, withdraw and the balance to be on
+then under this divided it further into three items where item is common for the three of them so that same css properties can be applied
+
+next is the css file in which started by defining the style for body tag then the card div to fit it perfectly at the center witht he shadow backgorund
+next is the item tag which will carry similar properties for the three divisions in the card div
+then individually set style for item1 item2 and item3
