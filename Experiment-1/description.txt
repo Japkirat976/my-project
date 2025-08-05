@@ -1,0 +1,49 @@
+HTML : 
+Field : name
+Can't leave it blank
+only capital and small letters and spaces are allowed in a string format (more than 1 character)
+Example:
+Japkirat Kaur is correct
+Anshika Sinha
+J@pkirat is incorrect
+japkirat75 is incorrect
+
+Field : email
+can't leave it blank
+input has to be in the form of abc@xyz.qwe
+japkirat.ladher@gmail.com is correct
+anshikasinha8077@yahoo.in is correct
+anshikasss is incorrect
+japkirat@kr is incorrect
+
+Field : age
+can't leave in blank
+ages from 1 to 120 are valid
+only numbers as input
+3 is correct
+89 is correct
+125 is incorrect
+-5 is incorrect
+
+then form submission if everything is valid the form is submitted if not then a warning is given
+
+
+
+CSS :
+
+Selector : body
+properties added 
+backgorund color to change the color of the whole webpage body
+colour to change the text of the colour
+width and height to fix the size of the body which consists of only form
+then set a border of 5px which will be solid and black in color
+next adding border radius to curve the edges of the border
+added padding to create some distance between the form content and the border
+then aadded the margin which adds distance between the border and outer elements (if any)
+
+Selectot : input
+properties added
+backgorund color to change the color of the input box
+color to change the text color
+then set display as flex to arrange it in either rows or columns
+then set flex-direction to set the layout as row and column in this case kept as a row
