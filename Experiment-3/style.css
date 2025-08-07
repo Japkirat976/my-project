@@ -7,7 +7,7 @@
     --text-colormn: black;
 }
 
-input:checked ~ .dashboard {
+.Darkmode:checked ~ .dashboard {
     --bg-header: rgb(22, 27, 22);
     --bg-footer: rgb(22, 27, 22);
     --bg-main: rgb(37, 36, 36);
@@ -56,6 +56,6 @@ footer {
     height: 100vh;
 }
 
-input {
+.Darkmode {
     display: none;
 }
