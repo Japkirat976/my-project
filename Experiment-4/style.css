@@ -1,0 +1,17 @@
+body {
+  margin-left: 20px;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: auto;
+    height: 150px;
+    margin-bottom: 20px;
+}
