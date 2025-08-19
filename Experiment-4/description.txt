@@ -1,0 +1,44 @@
+HTML : 
+Tag: <head>
+contains all the website basic data 
+
+Tag: <h2>
+contine the heading of size 2
+
+Tag: <textarea>
+creates a multiline textbox for entering characters
+given an id so that we can get it in javascript file to count the characters
+the value shown on the textbox before any value is added is the placeholder
+
+Tag: <div>
+to create a seperate content tag so that it can be easily accesible seperately
+
+Tag: <span>
+it dynamically updates the value in javascript
+to find live time count of characters 
+given an id to refernce it in javascript file
+inside the tag 0 is written to specify the start count is 0
+
+Tag: <script>
+to inculde javascript file into html file
+
+CSS:
+selector: body
+added left margin to add space oon the left side of the elements
+then the color of the background is a bit dark to differentiate the text box and the background
+the display is set as flex to arrange it in column format
+then align all the elements to the left side of the screen
+
+selector: h2
+added bottom margin to add space between the heading and the textarea
+
+selector: textarea
+kept the width as auto so that it is adjustable according to the width of the screen 
+height is set to a fix length
+then added bottom margin to add space between the text area and the output
+
+Javascript:
+first defined a variable by using getElementById and using id given to textarea in html
+then next variable is for the character count which needs to be displayed 
+function count() is defined to count the number of characters 
+then the output is given using the function addEventListener with parameters action and function
