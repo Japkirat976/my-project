@@ -1,0 +1,48 @@
+HTML:
+Tag: <h1>
+used for the main heading of the page showing the title SVG Drawing Tool
+
+Tag: <div> with class toolbar
+used to hold the tools and buttons together in one place
+
+Tag: <button>
+creates a clickable button, here it is given the id clearBtn so that it can be used in javascript to clear the drawing
+
+Tag: <svg>
+creates the drawing area where lines and paths will be drawn
+given width and height to set the canvas size
+id canvas is used to access it in javascript
+
+Tag: <script>
+used to link the external javascript file
+
+CSS:
+selector: body
+set display as flex in column direction
+added padding around the page
+gap is added between elements and aligned to the left
+
+selector: .toolbar
+displayed as flex with gap between items
+aligns the button neatly in a row
+
+selector: svg
+added a border to make the drawing area visible
+background is set to light color
+cursor is set as crosshair to show drawing functionality
+
+selector: button
+padding is added inside for better size
+font-size increased for readability
+cursor set as pointer when hovering
+bottom margin added to create spacing
+
+Javascript:
+variables are defined to access the svg canvas and the clear button
+two variables isDrawing and currentPath are used to check when drawing starts and which path is being drawn
+function getPoint(evt) calculates the exact x and y position of the mouse relative to the svg
+when mousedown event happens -> drawing starts, a new path is created and stroke properties are set (color, width, no fill) then added to the svg
+when mousemove happens -> if drawing is active, new line coordinates are added to the path so it follows the mouse
+function finishDrawing() ends the drawing when mouse is released or leaves the svg
+mouseup and mouseleave events call this function to stop drawing
+clearBtn click event removes all the child elements of the svg to clear the canvas
