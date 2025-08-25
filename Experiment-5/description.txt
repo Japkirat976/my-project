@@ -1,0 +1,56 @@
+HTML:
+Tag: <h1>
+used for the main heading of the page to show the title Product Filter
+
+Tag: <label>
+used to add a text label for the dropdown so the user knows what the dropdown is for
+
+Tag: <select>
+creates a dropdown list of categories which the user can choose from
+each <option> inside it represents a category (all, clothes, books, electronics)
+
+Tag: <div> with class product-list
+this is the main container that holds all the products together
+
+Tag: <div> with class product
+used for each individual product
+inside it the product name is written (like Tshirt, Smartphone etc.)
+data-category attribute is given to each product so that it can be checked in javascript and filtered accordingly
+
+Tag: <script>
+used to include the javascript file into the html file
+
+CSS:
+selector: body
+display is set as flex and arranged in column format
+margin is added on the left side to give spacing
+
+selector: label
+margin is added above and below to give spacing
+font size is increased for better readability
+
+selector: select
+margin added for spacing between elements
+font size is set and width is fixed for a proper dropdown size
+
+selector: .product-list
+display is flex and arranged in column format
+top margin is added to create gap between dropdown and product list
+
+selector: .product
+background color is white
+border with light grey color is added with rounded corners
+padding is added inside each product box
+margin is given around each product
+minimum width is set to keep a proper box size
+
+Javascript:
+first a variable is defined to get the dropdown using getElementById
+then all the products are selected using querySelectorAll
+
+function productFilter() is created to check the selected category
+inside it each product’s data-category attribute is compared with the selected value
+if category is “all” or it matches the product’s category, then the product is shown (display = block)
+otherwise it is hidden (display = none)
+
+finally, addEventListener is used on the dropdown so that whenever the value changes the function is called to filter the products
